@@ -12,6 +12,7 @@
 		203B752E210A380B00C10B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203B752C210A380B00C10B9A /* Main.storyboard */; };
 		203B7530210A381A00C10B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 203B752F210A381A00C10B9A /* Assets.xcassets */; };
 		203B7533210A381A00C10B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203B7531210A381A00C10B9A /* LaunchScreen.storyboard */; };
+		203B753B210A43C600C10B9A /* StarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 203B753A210A43C600C10B9A /* StarView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		203B752F210A381A00C10B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		203B7532210A381A00C10B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		203B7534210A381A00C10B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		203B753A210A43C600C10B9A /* StarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				203B752F210A381A00C10B9A /* Assets.xcassets */,
 				203B7531210A381A00C10B9A /* LaunchScreen.storyboard */,
 				203B7534210A381A00C10B9A /* Info.plist */,
+				203B753A210A43C600C10B9A /* StarView.xib */,
 			);
 			path = ProjetoWebService;
 			sourceTree = "<group>";
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				203B753B210A43C600C10B9A /* StarView.xib in Resources */,
 				203B7533210A381A00C10B9A /* LaunchScreen.storyboard in Resources */,
 				203B7530210A381A00C10B9A /* Assets.xcassets in Resources */,
 				203B752E210A380B00C10B9A /* Main.storyboard in Resources */,
