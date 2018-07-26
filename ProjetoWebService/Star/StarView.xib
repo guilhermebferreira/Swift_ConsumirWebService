@@ -17,31 +17,30 @@
             <rect key="frame" x="0.0" y="0.0" width="198" height="66"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarOff" translatesAutoresizingMaskIntoConstraints="NO" id="SaS-iH-maE">
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarOff" highlightedImage="StarOn" translatesAutoresizingMaskIntoConstraints="NO" id="SaS-iH-maE">
                     <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarOff" translatesAutoresizingMaskIntoConstraints="NO" id="dZF-2f-Z5v">
+                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarOff" highlightedImage="StarOn" translatesAutoresizingMaskIntoConstraints="NO" id="dZF-2f-Z5v">
                     <rect key="frame" x="66" y="0.0" width="66" height="66"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarOff" translatesAutoresizingMaskIntoConstraints="NO" id="0HN-g4-ywk">
+                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarOff" highlightedImage="StarOn" translatesAutoresizingMaskIntoConstraints="NO" id="0HN-g4-ywk">
                     <rect key="frame" x="132" y="0.0" width="66" height="66"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="dZF-2f-Z5v" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.333" id="0Q7-hE-bAn"/>
                 <constraint firstItem="SaS-iH-maE" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="0fL-lG-A3O"/>
-                <constraint firstItem="0HN-g4-ywk" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="6Be-uY-0W2"/>
+                <constraint firstItem="0HN-g4-ywk" firstAttribute="leading" secondItem="dZF-2f-Z5v" secondAttribute="trailing" id="2bI-DA-QCA"/>
                 <constraint firstItem="SaS-iH-maE" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="864-Sh-4ME"/>
-                <constraint firstItem="0HN-g4-ywk" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="APW-Bd-QWh"/>
-                <constraint firstItem="0HN-g4-ywk" firstAttribute="leading" secondItem="dZF-2f-Z5v" secondAttribute="trailing" id="Isw-s5-ojV"/>
-                <constraint firstItem="dZF-2f-Z5v" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="OGa-IW-QPb"/>
-                <constraint firstItem="dZF-2f-Z5v" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Por-7N-j0P"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0HN-g4-ywk" secondAttribute="trailing" id="RkI-mT-Ww9"/>
-                <constraint firstItem="0HN-g4-ywk" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.333" id="WaO-bd-AAr"/>
+                <constraint firstItem="0HN-g4-ywk" firstAttribute="width" secondItem="dZF-2f-Z5v" secondAttribute="width" id="Qaj-jp-xig"/>
+                <constraint firstItem="dZF-2f-Z5v" firstAttribute="height" secondItem="SaS-iH-maE" secondAttribute="height" id="X6g-qv-KYW"/>
+                <constraint firstItem="dZF-2f-Z5v" firstAttribute="leading" secondItem="SaS-iH-maE" secondAttribute="trailing" id="a2e-9t-Q7x"/>
                 <constraint firstItem="SaS-iH-maE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bTK-bu-3Fv"/>
+                <constraint firstItem="dZF-2f-Z5v" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="kpZ-Jt-iOH"/>
+                <constraint firstItem="0HN-g4-ywk" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="n4d-Mj-Tdu"/>
                 <constraint firstItem="SaS-iH-maE" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.333" id="ngW-Us-exC"/>
-                <constraint firstItem="dZF-2f-Z5v" firstAttribute="leading" secondItem="SaS-iH-maE" secondAttribute="trailing" id="zDM-SX-tzZ"/>
+                <constraint firstItem="0HN-g4-ywk" firstAttribute="height" secondItem="dZF-2f-Z5v" secondAttribute="height" id="pXb-8u-CQZ"/>
+                <constraint firstItem="dZF-2f-Z5v" firstAttribute="width" secondItem="SaS-iH-maE" secondAttribute="width" id="vdJ-qW-9RV"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
@@ -51,5 +50,6 @@
     </objects>
     <resources>
         <image name="StarOff" width="195" height="188"/>
+        <image name="StarOn" width="66" height="66"/>
     </resources>
 </document>

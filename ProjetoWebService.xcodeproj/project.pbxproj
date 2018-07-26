@@ -13,6 +13,7 @@
 		203B7530210A381A00C10B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 203B752F210A381A00C10B9A /* Assets.xcassets */; };
 		203B7533210A381A00C10B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203B7531210A381A00C10B9A /* LaunchScreen.storyboard */; };
 		203B753B210A43C600C10B9A /* StarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 203B753A210A43C600C10B9A /* StarView.xib */; };
+		203B753D210A4A3400C10B9A /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203B753C210A4A3400C10B9A /* StarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		203B7532210A381A00C10B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		203B7534210A381A00C10B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		203B753A210A43C600C10B9A /* StarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarView.xib; sourceTree = "<group>"; };
+		203B753C210A4A3400C10B9A /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +64,18 @@
 				203B752F210A381A00C10B9A /* Assets.xcassets */,
 				203B7531210A381A00C10B9A /* LaunchScreen.storyboard */,
 				203B7534210A381A00C10B9A /* Info.plist */,
-				203B753A210A43C600C10B9A /* StarView.xib */,
+				203B753E210A4A4100C10B9A /* Star */,
 			);
 			path = ProjetoWebService;
+			sourceTree = "<group>";
+		};
+		203B753E210A4A4100C10B9A /* Star */ = {
+			isa = PBXGroup;
+			children = (
+				203B753A210A43C600C10B9A /* StarView.xib */,
+				203B753C210A4A3400C10B9A /* StarView.swift */,
+			);
+			path = Star;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				203B753D210A4A3400C10B9A /* StarView.swift in Sources */,
 				203B752B210A380B00C10B9A /* ViewController.swift in Sources */,
 				203B7529210A380B00C10B9A /* AppDelegate.swift in Sources */,
 			);
