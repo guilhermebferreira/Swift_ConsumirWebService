@@ -12,8 +12,9 @@
 		203B752E210A380B00C10B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203B752C210A380B00C10B9A /* Main.storyboard */; };
 		203B7530210A381A00C10B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 203B752F210A381A00C10B9A /* Assets.xcassets */; };
 		203B7533210A381A00C10B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203B7531210A381A00C10B9A /* LaunchScreen.storyboard */; };
-		203B753B210A43C600C10B9A /* StarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 203B753A210A43C600C10B9A /* StarView.xib */; };
-		203B753D210A4A3400C10B9A /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203B753C210A4A3400C10B9A /* StarView.swift */; };
+		203B7542210A54BB00C10B9A /* StarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 203B7540210A54BA00C10B9A /* StarView.xib */; };
+		203B7543210A54BB00C10B9A /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203B7541210A54BA00C10B9A /* StarView.swift */; };
+		9F37FBB79C9E2EC7CADECB5B /* Pods_ProjetoWebService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC584F38945F5CD5640A9829 /* Pods_ProjetoWebService.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,11 @@
 		203B752F210A381A00C10B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		203B7532210A381A00C10B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		203B7534210A381A00C10B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		203B753A210A43C600C10B9A /* StarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarView.xib; sourceTree = "<group>"; };
-		203B753C210A4A3400C10B9A /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		203B7540210A54BA00C10B9A /* StarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StarView.xib; path = ../StarView.xib; sourceTree = "<group>"; };
+		203B7541210A54BA00C10B9A /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarView.swift; path = ../StarView.swift; sourceTree = "<group>"; };
+		5DF0430DAECFBB90B0DDA83A /* Pods-ProjetoWebService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetoWebService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetoWebService/Pods-ProjetoWebService.debug.xcconfig"; sourceTree = "<group>"; };
+		616B49887DE7E31D17360B03 /* Pods-ProjetoWebService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetoWebService.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetoWebService/Pods-ProjetoWebService.release.xcconfig"; sourceTree = "<group>"; };
+		CC584F38945F5CD5640A9829 /* Pods_ProjetoWebService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjetoWebService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F37FBB79C9E2EC7CADECB5B /* Pods_ProjetoWebService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DEF26824740ED49F8C7538C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DF0430DAECFBB90B0DDA83A /* Pods-ProjetoWebService.debug.xcconfig */,
+				616B49887DE7E31D17360B03 /* Pods-ProjetoWebService.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		203B751C210A380B00C10B9A = {
 			isa = PBXGroup;
 			children = (
 				203B7527210A380B00C10B9A /* ProjetoWebService */,
 				203B7526210A380B00C10B9A /* Products */,
+				1DEF26824740ED49F8C7538C /* Pods */,
+				B92E297A78128ADB736F3F6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,18 +80,27 @@
 				203B752F210A381A00C10B9A /* Assets.xcassets */,
 				203B7531210A381A00C10B9A /* LaunchScreen.storyboard */,
 				203B7534210A381A00C10B9A /* Info.plist */,
-				203B753E210A4A4100C10B9A /* Star */,
+				203B753F210A54A400C10B9A /* Star */,
 			);
 			path = ProjetoWebService;
 			sourceTree = "<group>";
 		};
-		203B753E210A4A4100C10B9A /* Star */ = {
+		203B753F210A54A400C10B9A /* Star */ = {
 			isa = PBXGroup;
 			children = (
-				203B753A210A43C600C10B9A /* StarView.xib */,
-				203B753C210A4A3400C10B9A /* StarView.swift */,
+				203B7541210A54BA00C10B9A /* StarView.swift */,
+				203B7540210A54BA00C10B9A /* StarView.xib */,
 			);
-			path = Star;
+			name = Star;
+			path = ../../../../.Trash/Star;
+			sourceTree = "<group>";
+		};
+		B92E297A78128ADB736F3F6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC584F38945F5CD5640A9829 /* Pods_ProjetoWebService.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 203B7537210A381A00C10B9A /* Build configuration list for PBXNativeTarget "ProjetoWebService" */;
 			buildPhases = (
+				D5B15E52BC3883CFC0ABAB7B /* [CP] Check Pods Manifest.lock */,
 				203B7521210A380B00C10B9A /* Sources */,
 				203B7522210A380B00C10B9A /* Frameworks */,
 				203B7523210A380B00C10B9A /* Resources */,
+				570C5AC98B2CFA63198F917E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,21 +163,60 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				203B753B210A43C600C10B9A /* StarView.xib in Resources */,
 				203B7533210A381A00C10B9A /* LaunchScreen.storyboard in Resources */,
 				203B7530210A381A00C10B9A /* Assets.xcassets in Resources */,
+				203B7542210A54BB00C10B9A /* StarView.xib in Resources */,
 				203B752E210A380B00C10B9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		570C5AC98B2CFA63198F917E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ProjetoWebService/Pods-ProjetoWebService-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjetoWebService/Pods-ProjetoWebService-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B15E52BC3883CFC0ABAB7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProjetoWebService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		203B7521210A380B00C10B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				203B753D210A4A3400C10B9A /* StarView.swift in Sources */,
+				203B7543210A54BB00C10B9A /* StarView.swift in Sources */,
 				203B752B210A380B00C10B9A /* ViewController.swift in Sources */,
 				203B7529210A380B00C10B9A /* AppDelegate.swift in Sources */,
 			);
@@ -294,6 +360,7 @@
 		};
 		203B7538210A381A00C10B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DF0430DAECFBB90B0DDA83A /* Pods-ProjetoWebService.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,6 +379,7 @@
 		};
 		203B7539210A381A00C10B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 616B49887DE7E31D17360B03 /* Pods-ProjetoWebService.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
