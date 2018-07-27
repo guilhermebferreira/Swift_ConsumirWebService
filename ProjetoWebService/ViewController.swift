@@ -8,10 +8,15 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var vrStars: StarView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        vrStars.numStars = 2
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
