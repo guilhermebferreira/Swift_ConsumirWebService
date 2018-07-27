@@ -8,9 +8,60 @@
 
 import UIKit
 import Alamofire
+import AlamofireImage
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
+    
+    
+    var company:Company?
 
+    @IBOutlet weak var vrTableView: UITableView!
+    
+    /******************DEFININDO METODOS DO DATASOURCE**************/
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let company = self.company{
+            //verifica se o company já foi validado
+            return company.listItens.count
+        }else{
+            return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = vrTableView.dequeueReusableCell(withIdentifier: "cell") as! StarCell
+        
+        let item = company?.listItens[indexPath.row]
+        
+        cell.vrLabel.text = item?.itemName
+        cell.vrStars.numStars = (item?.classification)!
+        
+        
+        
+        
+        // The image to dowload
+        let remoteImageURL = URL(string: item!.image)!
+        
+        // Use Alamofire to download the image
+        Alamofire.request(remoteImageURL).responseData { (response) in
+            if response.error == nil {
+                //   print(response.result)
+                
+                // Show the downloaded image:
+                if let data = response.data {
+                    //self.downloadImage.image = UIImage(data: data)
+                    cell.vrImagem.image = UIImage(data: data)
+                }
+            }
+        }
+        
+        return cell
+        
+    }
+    
     
     //Obtem o JSon do server e transforma em Objeto
     func parseJson(){
@@ -23,7 +74,7 @@ class ViewController: UIViewController {
                     let longitude = json["longitude"] as? NSString,
                     let latitude = json["latitude"] as? NSString,
                     let list = json["itens"] as? [[String:Any]]{
-                    var company = Company(companyName: nome, address: adress, latitude: latitude.doubleValue, longitude: longitude.doubleValue)
+                    let company = Company(companyName: nome, address: adress, latitude: latitude.doubleValue, longitude: longitude.doubleValue)
                     
                     for item in list{
                         
@@ -33,9 +84,9 @@ class ViewController: UIViewController {
                             
                             company.listItens.append(Item(classification: classification.integerValue, image: image, itemName: itemName))
                         }
-                        
-                        
                     }
+                    self.company = company
+                    self.vrTableView.reloadData()
                 }
                 
             }
