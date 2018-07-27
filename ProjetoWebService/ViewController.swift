@@ -39,14 +39,15 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.vrLabel.text = item?.itemName
         cell.vrStars.numStars = (item?.classification)!
         
-        
+        //configurando para que as celulas filhas não fiquem highlited quando a celula mãe ficar
+        cell.selectionStyle = .none
         
         
         // The image to dowload
         let remoteImageURL = URL(string: item!.image)!
         
         // Use Alamofire to download the image
-        Alamofire.request(remoteImageURL).responseData { (response) in
+        /*Alamofire.request(remoteImageURL).responseData { (response) in
             if response.error == nil {
                 //   print(response.result)
                 
@@ -56,7 +57,11 @@ class ViewController: UIViewController, UITableViewDataSource {
                     cell.vrImagem.image = UIImage(data: data)
                 }
             }
-        }
+        }*/
+        
+        //or using alamofireImage
+        let remoteImmageURL = URL(string: (company?.listItens[indexPath.row].image)!)!
+        cell.vrImagem.af_setImage(withURL: remoteImageURL)
         
         return cell
         
