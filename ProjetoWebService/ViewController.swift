@@ -7,15 +7,26 @@
 //
 
 import UIKit
-
+import Alamofire
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var vrStars: StarView!
+    
+    //Obtem o JSon do server e transforma em Objeto
+    func parseJson(){
+        Alamofire.request("http://silvanomalfattiml.000webhostapp.com/cardapio.json").responseJSON{
+            response in
+            
+            if let json = response.result.value{
+                
+            }
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        vrStars.numStars = 2
         
         // Do any additional setup after loading the view, typically from a nib.
     }
